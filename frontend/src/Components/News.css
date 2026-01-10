@@ -1,0 +1,116 @@
+.news-container {
+    background: #1e1b4b;
+    /* Deep Indigo/Purple */
+    padding: 80px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.news-header-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.section-icon-news {
+    color: #a78bfa !important;
+    font-size: 50px !important;
+    margin-bottom: 15px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+
+.news-title {
+    color: white;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+}
+
+.news-data {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.news-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.col-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10px;
+    border-left: 4px solid #a78bfa;
+}
+
+.news-sub-icon {
+    color: #a78bfa;
+    font-size: 24px !important;
+}
+
+.news-subtitle {
+    color: #c4b5fd;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.news-event.card-purple {
+    background: rgba(49, 46, 129, 0.4);
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid rgba(167, 139, 250, 0.2);
+    transition: all 0.3s ease;
+}
+
+.news-event.card-purple:hover {
+    background: rgba(49, 46, 129, 0.7);
+    border-color: #a78bfa;
+    transform: translateX(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.news-event h4 {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px !important;
+}
+
+.news-event p {
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 !important;
+}
+
+@media (max-width: 900px) {
+    .news-data {
+        grid-template-columns: 1fr;
+    }
+}
