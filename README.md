@@ -103,9 +103,24 @@ Contributions are welcome!
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a Pull Request.
 
-## 📝 License
+
+## � Demo Credentials
+
+Use the following credentials to test the application features:
+
+### 👤 Admin Access
+- **ID**: `ADMIN001`
+- **Email**: `admin@gmail.com`
+- **Password**: `admin123`
+
+### 🎓 Student Access
+- **ID**: `STUD001`
+- **Email**: `student@gmail.com`
+- **Password**: `student123`
+
+## �📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-*Created with ❤️ by [Your Name]*
+*Created with ❤️ by Raghavendra*
