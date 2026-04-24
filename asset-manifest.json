@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/DakshaLMS_MERN/static/css/main.134594f2.chunk.css",
+    "main.js": "/DakshaLMS_MERN/static/js/main.0cb9253a.chunk.js",
+    "main.js.map": "/DakshaLMS_MERN/static/js/main.0cb9253a.chunk.js.map",
+    "runtime-main.js": "/DakshaLMS_MERN/static/js/runtime-main.cbb86fad.js",
+    "runtime-main.js.map": "/DakshaLMS_MERN/static/js/runtime-main.cbb86fad.js.map",
+    "static/css/2.cdd69344.chunk.css": "/DakshaLMS_MERN/static/css/2.cdd69344.chunk.css",
+    "static/js/2.807e0305.chunk.js": "/DakshaLMS_MERN/static/js/2.807e0305.chunk.js",
+    "static/js/2.807e0305.chunk.js.map": "/DakshaLMS_MERN/static/js/2.807e0305.chunk.js.map",
+    "static/js/3.1a05fb83.chunk.js": "/DakshaLMS_MERN/static/js/3.1a05fb83.chunk.js",
+    "static/js/3.1a05fb83.chunk.js.map": "/DakshaLMS_MERN/static/js/3.1a05fb83.chunk.js.map",
+    "index.html": "/DakshaLMS_MERN/index.html",
+    "static/css/2.cdd69344.chunk.css.map": "/DakshaLMS_MERN/static/css/2.cdd69344.chunk.css.map",
+    "static/css/main.134594f2.chunk.css.map": "/DakshaLMS_MERN/static/css/main.134594f2.chunk.css.map",
+    "static/js/2.807e0305.chunk.js.LICENSE.txt": "/DakshaLMS_MERN/static/js/2.807e0305.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cbb86fad.js",
+    "static/css/2.cdd69344.chunk.css",
+    "static/js/2.807e0305.chunk.js",
+    "static/css/main.134594f2.chunk.css",
+    "static/js/main.0cb9253a.chunk.js"
+  ]
+}
