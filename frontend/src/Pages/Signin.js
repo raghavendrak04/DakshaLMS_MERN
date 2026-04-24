@@ -7,6 +7,9 @@ import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import LockIcon from "@material-ui/icons/Lock";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import SchoolIcon from "@material-ui/icons/School";
+import PersonIcon from "@material-ui/icons/Person";
+import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 
 function Signin() {
     const [isStudent, setIsStudent] = useState(true)
@@ -38,6 +41,17 @@ function Signin() {
         isStudent
             ? loginCall({ admissionId, password }, dispatch)
             : loginCall({ employeeId, password }, dispatch)
+    }
+
+    const handleDemoLogin = (type) => {
+        setError("");
+        if (type === "student") {
+            loginCall({ admissionId: "STUD001", password: "student123" }, dispatch);
+        } else if (type === "teacher") {
+            loginCall({ employeeId: "TEACH001", password: "teacher123" }, dispatch);
+        } else if (type === "admin") {
+            loginCall({ employeeId: "ADMIN001", password: "admin123" }, dispatch);
+        }
     }
 
     return (
@@ -114,6 +128,26 @@ function Signin() {
                         {isLoading ? "Authenticating..." : "Sign In"}
                         {!isLoading && <ArrowForwardIcon className="btn-icon" />}
                     </button>
+
+                    <div className="demo-login-section">
+                        <div className="demo-divider">
+                            <span>Or continue with</span>
+                        </div>
+                        <div className="demo-buttons-row">
+                            <button type="button" className="demo-btn" onClick={() => handleDemoLogin("student")} disabled={isLoading}>
+                                <SchoolIcon className="demo-btn-icon" />
+                                Demo Student
+                            </button>
+                            <button type="button" className="demo-btn" onClick={() => handleDemoLogin("teacher")} disabled={isLoading}>
+                                <PersonIcon className="demo-btn-icon" />
+                                Demo Teacher
+                            </button>
+                        </div>
+                        <button type="button" className="demo-btn demo-btn-admin" onClick={() => handleDemoLogin("admin")} disabled={isLoading}>
+                            <SupervisorAccountIcon className="demo-btn-icon" />
+                            Demo Admin
+                        </button>
+                    </div>
 
                     <div className="signin-footer">
                         <a className="forget-pass" href="#home">Forgot password?</a>

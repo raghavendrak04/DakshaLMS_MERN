@@ -353,6 +353,7 @@ export const seedData = async () => {
         const salt = await bcrypt.genSalt(10);
         const adminPassword = await bcrypt.hash("admin123", salt);
         const studentPassword = await bcrypt.hash("student123", salt);
+        const teacherPassword = await bcrypt.hash("teacher123", salt);
 
         const adminUser = new User({
             userFullName: "Demo Admin",
@@ -378,8 +379,21 @@ export const seedData = async () => {
             gender: "Female"
         });
 
+        const teacherUser = new User({
+            userFullName: "Demo Teacher",
+            email: "teacher@gmail.com",
+            password: teacherPassword,
+            isAdmin: false,
+            userType: "Staff",
+            employeeId: "TEACH001",
+            mobileNumber: "9111111111",
+            address: "IIIT Sri City Faculty Quarters",
+            gender: "Male"
+        });
+
         await adminUser.save();
         await studentUser.save();
+        await teacherUser.save();
         console.log("Demo users seeded.");
 
         console.log("Adding books...");
